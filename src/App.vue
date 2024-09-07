@@ -34,7 +34,7 @@ const todoList = ref([
 //const techStack = ['vue', 'stackblitz']
 const handleClickValue = () => {
   todoList.value.push({ text: inputValue.value, done: false });
-  todoList.value = '';
+  inputValue.value = '';
 };
 const handleClickDelete = (index) => {
   console.log(`handle click delete : ${index}`);
